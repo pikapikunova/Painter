@@ -42,11 +42,7 @@ class MainFragment : Fragment()
 
         //val t = box.giveCurRect().retPoint()[0]
 
-        val list = (activity as MainActivity).dbHelper.getAllValues()
-        for(i in 1..list.size step 4) {
-            val t = Rectangle(PointF(list[i].pointLeftBottom, list[i + 1].pointLeftTop))
-            box.rectangles.add(t)
-        }
+
 
         /*val list = box.giveCurRect()
         for(i in list)
